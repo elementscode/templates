@@ -1,7 +1,20 @@
 {
-  "name": "{{dashCaseName}}",
   "private": true,
+  "browser": {
+    "app/config": "app/config/browser",
+    "app/server": false
+  },
+  "browserslist": "last 10 versions",
   "dependencies": {
-    "@elements/application": "next"
+    "@elements/application": "next",
+    "autoprefixer": ">=10.2.1 <10.3.0",
+    "classnames": ">=2.2.6 <2.3.0",
+    "postcss": ">=8.2.4 <8.3.0",
+    "react": ">=16.14.0 <16.15.0",
+    "react-dom": ">=16.14.0 <16.15.0"
+  },
+  "devDependencies": {
+    "@types/node": ">=14.14.20 <14.15.0",
+    "@types/react": ">=16.14.2 <16.15.0"
   }
 }

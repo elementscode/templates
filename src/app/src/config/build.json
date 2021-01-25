@@ -1,0 +1,9 @@
+{
+  "assetPath": "assets",
+  "assetUrl": "http://localhost:4000/assets",
+  "compilePackages": [],
+  "env": {
+    "production": {
+    }
+  }
+}

@@ -1,18 +1,27 @@
 let path = require('path');
 let {
   Command,
-  create
+  create,
+  style,
+  indent,
 } = require('@elements/create');
 
 exports.default = Command.create('app', 'Create an app.')
   .arg('nameOrPath', 'The name or path of the app to create.')
   .onRun(async function(cmd) {
-    console.log(process.argv);
-    console.log(process.env.NODE_PATH);
+    let nameOrPath = cmd.get('nameOrPath', '.');
+
     await create({
       rootDirPath: __dirname,
       srcRootPath: 'src',
-      nameOrPath: cmd.get('nameOrPath', '.'),
+      nameOrPath: nameOrPath,
       dstPathPrefix: '',
+      onJobSummary: (job) => {
+        let todo = 'elements install && elements start';
+        if (nameOrPath !== '.') {
+          todo = 'cd ' + nameOrPath + ' && ' + todo;
+        }
+        return style.header('Todo:') + '\n\n' + style.subtle(indent(todo, 2));
+      },
     });
   });
