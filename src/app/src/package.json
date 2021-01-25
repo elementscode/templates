@@ -1,0 +1,7 @@
+{
+  "name": "{{dashCaseName}}",
+  "private": true,
+  "dependencies": {
+    "@elements/application": "next"
+  }
+}
