@@ -1,13 +1,18 @@
+/// <style path="./index.css"/>
 import * as React from 'react';
+import { I{{capitalCaseName}}Page } from './types';
 
-export interface I{{capitalCaseName}} {
-  [key: string]: any;
-}
+export default class {{capitalCaseName}}Page extends React.Component<I{{capitalCaseName}}Page, I{{capitalCaseName}}Page> {
+  constructor(props: I{{capitalCaseName}}Page) {
+    super(props);
+    this.state = { ...props };
+  }
 
-export function(props: I{{capitalCaseName}}) {
-  return (
-    <div className="{{dashCaseName}}">
-      {{titleCaseName}}
-    </div>
-  );
+  render() {
+    return (
+      <div className="{{dashCaseName}}-page">
+        <h1>{{titleCaseName}}</h1>
+      </div>
+    );
+  }
 }
