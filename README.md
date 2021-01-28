@@ -1,15 +1,17 @@
 @elements/templates
 ===================
 
-These are the default templates used by the `elements create` command to create
-projects and project resources. These templates are installed when elements is
-installed. You can override templates globally or at the project level.
+Global templates used by the elements create command.
 
-To override global templates copy the template from this **src** folder into
-**~/elements/config/user/templates** folder. You can also create new templates
-in this folder to make them globally accessible.
+Templates let you create projects and project resources from default files and
+folder structures. These templates are installed globally with this package when
+you install elements.
 
-To override or create project specific templates, update or create the template
-in the project's **config/templates** folder.
+You can find these templates in `~/elements/node_modules/@elements/templates/src`.
+And you can override default global templates by copying the template folder
+into the `~/elements/config/user/templates` folder and updating the source code
+for the template. You can also create brand new templates. Look at the default
+templates for examples.
 
-To see how to create a template look at **src/app/index.js** in this project.
+You can override or create new templates at the project level by putting
+templates into the `config/templates` folder of the project.
