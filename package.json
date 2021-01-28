@@ -1,6 +1,6 @@
 {
   "name": "@elements/templates",
-  "description": "The stock templates used by elements create.",
-  "version": "1.0.0",
+  "description": "Global templates used by the elements create command.",
+  "version": "1.0.0-beta.1",
   "license": "MIT"
 }
