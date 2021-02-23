@@ -5,7 +5,7 @@ let {
 } = require('@elements/create');
 
 function getTodo(nameOrPath) {
-  let todo = 'elements install && elements start';
+  let todo = 'elements start';
   if (nameOrPath !== '.') {
     todo = 'cd ' + nameOrPath + ' && ' + todo;
   }
