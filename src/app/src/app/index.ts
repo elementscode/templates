@@ -1,8 +1,12 @@
 import { Application, IRequest } from '@elements/application';
+import RenderReactEngine from '@elements/application/render/react';
 
-// create the elements application
+// create the elements application.
 let app = new Application();
 export default app;
 
-// server only code goes in ./server.ts
+// render react pages.
+app.addRenderEngine(new RenderReactEngine());
+
+// server only code.
 app.server(require('./server'));
