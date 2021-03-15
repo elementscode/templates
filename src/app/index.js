@@ -7,7 +7,7 @@ let {
 function getTodo(nameOrPath) {
   let todo = 'elements start';
   if (nameOrPath !== '.') {
-    todo = 'cd ' + nameOrPath + ' && ' + todo;
+    todo = 'cd ' + nameOrPath + '\n' + todo;
   }
   return todo;
 }
