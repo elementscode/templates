@@ -1,6 +1,6 @@
 {
   "name": "@elements/templates",
   "description": "Global templates used by the elements create command.",
-  "version": "1.0.0-alpha.107",
+  "version": "1.0.0-alpha.108",
   "license": "MIT"
 }
