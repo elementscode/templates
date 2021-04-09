@@ -1,10 +1,10 @@
 import { Component, template } from '@elements/application';
 import Template from './template';
 
-export interface I{{capitalCaseName}} {
+export interface I{{capitalCaseName}}Email {
   [key: string]: any;
 }
 
 @template(Template)
-export class {{capitalCaseName}} extends Component {
+export default class {{capitalCaseName}}Email extends Component {
 }

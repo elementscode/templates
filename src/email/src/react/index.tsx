@@ -13,7 +13,8 @@ export default class {{capitalCaseName}}Email extends React.Component<I{{capital
 
   render() {
     return (
-      <div className="{{dashCaseName}}-email">
+      <div>
+        <h1>{{titleCaseName}} Email</h1>
       </div>
     );
   }
