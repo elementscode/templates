@@ -1,6 +1,9 @@
 /// <style path="./index.css"/>
 import * as React from 'react';
-import { I{{capitalCaseName}}Page } from './types';
+
+export interface I{{capitalCaseName}}Page {
+  [key: string]: any;
+}
 
 export default class {{capitalCaseName}}Page extends React.Component<I{{capitalCaseName}}Page, I{{capitalCaseName}}Page> {
   constructor(props: I{{capitalCaseName}}Page) {
@@ -10,7 +13,7 @@ export default class {{capitalCaseName}}Page extends React.Component<I{{capitalC
 
   render() {
     return (
-      <div className="{{dashCaseName}}-page">
+      <div>
         <h1>{{titleCaseName}}</h1>
       </div>
     );

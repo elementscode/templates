@@ -13,7 +13,7 @@ export class {{capitalCaseName}} extends React.Component<I{{capitalCaseName}}, I
 
   render() {
     return (
-      <div className="{{dashCaseName}}">
+      <div>
         {this.props.children}
       </div>
     );
