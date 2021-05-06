@@ -3,10 +3,10 @@
   <html>
     <head>
       <meta charset="utf-8">
-      {{meta}}
+      \{{meta}}
       <title>{title}</title>
       <link e:for={style of styles} rel="stylesheet" href={style.url} data-loader-ignore={style.dataLoaderIgnore}>
-      <script e:for={script of scripts} src={script.url} data-loader-ignore={script.dataLoaderIgnore} async></script>
+      <script e:for={script of scripts} src={script.url} data-loader-ignore={script.dataLoaderIgnore} async={script.async}></script>
     </head>
 
     <body>

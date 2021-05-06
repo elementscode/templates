@@ -3,10 +3,10 @@
 import { Component, template } from '@elements/application';
 import Template from './template';
 
-export interface I{{capitalCaseName}} {
+export interface IUnhandledPage {
   [key: string]: any;
 }
 
 @template(Template)
-export class {{capitalCaseName}} extends Component {
+export default class UnhandledPage extends Component {
 }

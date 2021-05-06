@@ -3,10 +3,10 @@
 import { Component, template } from '@elements/application';
 import Template from './template';
 
-export interface I{{capitalCaseName}} {
+export interface INav {
   [key: string]: any;
 }
 
 @template(Template)
-export class {{capitalCaseName}} extends Component {
+export class Nav extends Component {
 }
