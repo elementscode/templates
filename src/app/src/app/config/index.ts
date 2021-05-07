@@ -7,17 +7,17 @@ export default Config.create((config: Config) => {
   // server
   config.set('server.port', 4000);
   config.set('server.ssl.on', !config.is('dev'));
-  config.set('server.ssl.key', '/path/to/ssl.key');
-  config.set('server.ssl.cert', '/path/to/ssl.crt');
+  config.set('server.ssl.key', '');
+  config.set('server.ssl.cert', '');
   config.set('server.log.hideTimeStamps', false);
 
   // session
-  config.set('session.secret', '{{random}}');
+  config.set('session.secret', '<%= random %>');
   config.set('session.loggedInExpires', undefined);
   config.set('session.loggedOutExpires', undefined);
 
   // database
-  config.set('db.database', '{{dashCaseName}}');
+  config.set('db.database', '<%= dashCaseName %>');
   config.set('db.host', 'localhost');
   config.set('db.user', process.env['USER']);
   config.set('db.password', '');

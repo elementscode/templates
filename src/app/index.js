@@ -2,6 +2,7 @@ let path = require('path');
 let {
   Command,
   create,
+  createDefaultRenderData,
 } = require('@elements/create');
 
 function getTodo(nameOrPath) {
@@ -27,5 +28,6 @@ exports.default = Command.create('app', 'Create a web app.')
       replace: cmd.get('replace', undefined),
       merge: cmd.get('merge', undefined),
       writePathsToStdout: cmd.get('stdout', false),
+      renderData: createDefaultRenderData(nameOrPath),
     });
   });

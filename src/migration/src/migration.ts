@@ -1,7 +1,7 @@
 import { Migration, DbConnection } from '@elements/application';
 
 export default Migration.create({
-  description: '{{description}}',
+  description: '<%= description %>',
 
   async up(db: DbConnection) {
     /**

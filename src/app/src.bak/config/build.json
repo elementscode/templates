@@ -1,9 +1,0 @@
-{
-  "assetPath": "assets",
-  "assetUrl": "/assets",
-  "compilePackages": [],
-  "env": {
-    "production": {
-    }
-  }
-}

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# exit on any errors
+set -e
+
+# remove existing template files
+rm -rf src
+mkdir src
+
+# copy from starter project
+src="~/src/github.com/elements/starter"
+items=(.gitignore app config index.ts package.json tsconfig.json)
+
+for item in ${items[@]}; do
+  cmd="cp -r $src/$item src/"
+  echo $cmd
+  eval $cmd
+done
+
+# create empty .elements directory
+mkdir src/.elements
